@@ -1,0 +1,10 @@
+.custom-offcanvas {
+    width: 75%; /* Kenglikni mos ravishda o'zgartirish mumkin, masalan, 75% */
+  }
+  
+  @media (max-width: 576px) { /* Mobil ekranlar uchun */
+    .custom-offcanvas {
+      width: 90% !important; /* Juda kichik ekranlarda 90% qilish mumkin */
+    }
+  }
+  
