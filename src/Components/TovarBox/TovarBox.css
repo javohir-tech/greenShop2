@@ -1,0 +1,53 @@
+.tovar-box{
+    position: relative;
+    overflow: hidden;
+}
+
+.tovar-box__img img{
+    width: 250px;
+    height: 250px;
+    transition: all 0.3s ease;
+}
+
+.tovar-name{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: rgba(61, 61, 61, 1);
+}
+
+.tovar-summa{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(70, 163, 88, 1);
+}
+
+.tovar-box__icons{
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.tovar-box__icons svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    z-index: 888;
+}
+
+.tovar-box__icons svg:hover{
+    color: rgba(70, 163, 88, 1);
+}
+
+.tovar-box:hover .tovar-box__icons{
+    opacity: 1;
+}
+
+.tovar-box:hover{
+    .tovar-box__img img{
+        transform: scale(1.1);
+        z-index: -1;
+    }
+}
+

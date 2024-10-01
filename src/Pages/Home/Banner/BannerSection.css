@@ -1,0 +1,22 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.swiper-slide img {
+    width: 518px !important;
+}
+ 
+.swiper-pagination-bullet {
+    background-color: rgba(70, 163, 88, 0.3);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(70, 163, 88, 1);
+
+}

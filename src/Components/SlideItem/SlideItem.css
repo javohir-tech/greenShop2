@@ -1,0 +1,31 @@
+.banner-section__title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 1);
+    letter-spacing: 10%;
+  }
+
+  .banner-section__info h1{
+    font-weight: 900;
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+    color: rgba(61, 61, 61, 1);
+  }
+
+  .banner-section__subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(114, 114, 114, 1);
+  }
+
+  .banner-section__info span{
+    color: rgba(70, 163, 88, 1);
+  }
+
+  .banner-section__info{
+    padding-left: 30px;
+  }
+
+  

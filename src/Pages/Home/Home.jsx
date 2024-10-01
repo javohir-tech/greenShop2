@@ -1,9 +1,12 @@
 import React from 'react'
+import BannerSection from './Banner/BannerSection'
+import ShopSection from './ShopSection/ShopSection'
 
 function Home() {
   return (
-    <div>
-      home
+    <div className='container'>
+        <BannerSection/>
+        <ShopSection/>
     </div>
   )
 }

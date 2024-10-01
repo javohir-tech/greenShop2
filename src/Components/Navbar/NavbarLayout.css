@@ -1,6 +1,31 @@
 .custom-offcanvas {
     width: 75%; /* Kenglikni mos ravishda o'zgartirish mumkin, masalan, 75% */
   }
+
+  .main-button{
+    background-color: rgba(70, 163, 88, 1);
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s ease-in-out;
+    border: none;
+  }
+
+  .main-button:hover{
+   background-color: #399918;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .navbar-link{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    transition: all 0.5s ease;
+    color: rgba(61, 61, 61, 1);
+  }
+
+  .navbar-link:hover{
+    font-weight: 700;
+  }
   
   @media (max-width: 576px) { /* Mobil ekranlar uchun */
     .custom-offcanvas {

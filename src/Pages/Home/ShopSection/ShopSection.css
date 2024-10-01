@@ -1,0 +1,17 @@
+.categories {
+    padding-left: 5px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.shop-section__links li{
+    list-style: none;   
+    margin-right: 15px;
+}   
+
+.shop-section__links{
+    margin-bottom: 0;
+}

@@ -40,7 +40,6 @@ function NavbarLayout() {
     const LoginModal = () =>{
         setShow(true)
     }
-    console.log(modalMarket);
     
     const MarketModalClose = () => {
         setShow(false)
@@ -51,9 +50,9 @@ function NavbarLayout() {
         <>
             <Navbar key={expand} expand={expand} className="mb-3 border-">
                 <div className='container pb-2 border-bottom border-success'>
-                    <Navbar.Brand href="#">
+                    <NavLink to='/'>
                         <img src={navbarLogo} className='img-fluid' alt="img is not defiend" />
-                    </Navbar.Brand>
+                    </NavLink>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={handleOpen} />
                     <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-${expand}`}
@@ -70,17 +69,17 @@ function NavbarLayout() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-center flex-grow-1 pe-3 w-50">
-                                <NavLink className='me-5' onClick={handleOffcanvas} to="/">Home</NavLink>
-                                <NavLink className='me-5' onClick={handleOffcanvas} to="/shop">Shop</NavLink>
-                                <NavLink className='me-5' onClick={handleOffcanvas} to="/plants">Plants</NavLink>
-                                <NavLink className='me-5' onClick={handleOffcanvas} to="/blogs">blogs</NavLink>
+                                <NavLink className='me-5 navbar-link' onClick={handleOffcanvas} to="/">Home</NavLink>
+                                <NavLink className='me-5 navbar-link' onClick={handleOffcanvas} to="/shop">Shop</NavLink>
+                                <NavLink className='me-5 navbar-link' onClick={handleOffcanvas} to="/plants">Plant Care</NavLink>
+                                <NavLink className='me-5 navbar-link' onClick={handleOffcanvas} to="/blogs">Blogs</NavLink>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                     <div>
                         <img className='me-3' src={serachImg} alt="img is not defined" />
                         <img onClick={MarketModal} className='me-3' src={Market} alt="img is not defined" />
-                        <button className='btn btn-success' onClick={modalMarket ? null : LoginModal}><img src={login} className='me-2' alt="img is not defined" />Login</button>
+                        <button className='btn  main-button' onClick={modalMarket ? null : LoginModal}><img src={login} className='me-2' alt="img is not defined" />Login</button>
                     </div>
                     {/* modal  */}
                     {
