@@ -16,6 +16,10 @@ import BigPlants from "./Pages/Home/ShopSection/Categories/BigPlants";
 import Succulents from "./Pages/Home/ShopSection/Categories/Succulents";
 import Trerrariums from "./Pages/Home/ShopSection/Categories/Trerrariums";
 import Gardening from "./Pages/Home/ShopSection/Categories/Gardening";
+import PlantDetail from "./PlantDetail";
+import Small from "./Pages/Home/ShopSection/Size/Small";
+import Medium from "./Pages/Home/ShopSection/Size/Medium";
+import Large from "./Pages/Home/ShopSection/Size/Large";
 
 
 const router = createBrowserRouter([
@@ -28,54 +32,70 @@ const router = createBrowserRouter([
                 element: <Home />,
                 children: [
                     {
-                       index:true,
+                        index: true,
                         element: <AllPlats />
                     },
                     {
-                        path:"newArivvals",
-                        element:<NewArivvals/>
+                        path: "newArivvals",
+                        element: <NewArivvals />
                     },
                     {
-                        path:"sale",
-                        element:<Sale/>
+                        path: "sale",
+                        element: <Sale />
                     },
                     {
-                        path:"housePlants",
-                        element:<Houseplants/>
+                        path: "housePlants",
+                        element: <Houseplants />
                     },
                     {
-                        path:"potterPlants",
-                        element:<PotterPlants/>
+                        path: "potterPlants",
+                        element: <PotterPlants />
                     },
                     {
-                        path:"seeds",
-                        element:<Seeds/>
+                        path: "seeds",
+                        element: <Seeds />
                     },
                     {
-                        path:"smallPlants",
-                        element:<SmallPlants/>
+                        path: "smallPlants",
+                        element: <SmallPlants />
                     },
                     {
-                        path:"bigPlants",
-                        element:<BigPlants/>
+                        path: "bigPlants",
+                        element: <BigPlants />
                     },
                     {
-                        path:"succulents",
-                        element:<Succulents/>
+                        path: "succulents",
+                        element: <Succulents />
                     },
                     {
-                        path:"trerrariums",
-                        element:<Trerrariums/>
+                        path: "trerrariums",
+                        element: <Trerrariums />
                     },
                     {
-                        path:"gardening",
-                        element:<Gardening/>
+                        path: "gardening",
+                        element: <Gardening />
                     },
                     {
-                        path:"accessories",
-                        element:<Accessories/>
+                        path: "accessories",
+                        element: <Accessories />
                     },
+                    {
+                        path: "small",
+                        element: <Small />
+                    },
+                    {
+                        path: "medium",
+                        element: <Medium />
+                    },
+                    {
+                        path: "large",
+                        element: <Large/>
+                    }
                 ]
+            },
+            {
+                path: "plants/:id",
+                element: <PlantDetail />
             },
             {
                 path: "/shop",

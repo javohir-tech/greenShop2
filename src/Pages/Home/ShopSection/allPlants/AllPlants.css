@@ -1,0 +1,24 @@
+.pagination-next-large {
+    font-size: 1.5rem !important;
+    padding: 10px 20px;
+}
+
+.active>.page-link{
+    background-color: rgba(70, 163, 88, 1);
+    border: none;
+}
+
+.page-item:first-child .page-link{
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.page-item:not(:first-child) .page-link {
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.page-link {
+    color: green;
+}
+

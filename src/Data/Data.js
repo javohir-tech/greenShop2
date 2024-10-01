@@ -7,6 +7,8 @@ import tovar6 from '../../public/Tovars/t6.png'
 import tovar7 from '../../public/Tovars/t7.png'
 import tovar8 from '../../public/Tovars/t8.jpg'
 import tovar9 from '../../public/Tovars/t9.png'
+import tovar10 from '../../public/Tovars/t10.jpg'
+import tovar11 from '../../public/Tovars/t11.jpg'
 
 
 const data = [
@@ -42,28 +44,41 @@ const data = [
     },
     {
         key:6,
-        tovar_name:"Blushing Bromeliad",
+        tovar_name:"Aluminum Plant",
         tovar_summa:"$179.00",
         tovar_img:tovar6
     },
     {
         key:7,
-        tovar_name:"Blushing Bromeliad",
-        tovar_summa:"$139.00",
+        tovar_name:"Aluminum Plant",
+        tovar_summa:"$99.00",
         tovar_img:tovar7
     },
     {
         key:8,
-        tovar_name:"Blushing Bromeliad",
-        tovar_summa:"$139.00",
+        tovar_name:"Broadleaf Lady Palm",
+        tovar_summa:"$59.00",
         tovar_img:tovar8
     },
     {
         key:9,
-        tovar_name:"Blushing Bromeliad",
-        tovar_summa:"$139.00",
+        tovar_name:"Chinese Evergreen",
+        tovar_summa:"$39.00",
         tovar_img:tovar9
     },
+    {
+        key:10,
+        tovar_name:"Blushing Bromeliad",
+        tovar_summa:"$59.00",
+        tovar_img:tovar10
+    },
+    {
+        key:11,
+        tovar_name:"Blushing Bromeliad",
+        tovar_summa:"$139.00",
+        tovar_img:tovar11
+    },
+    
 ]
 
 export default data
