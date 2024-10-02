@@ -13,7 +13,7 @@ export default function Sale() {
   return (
     <div className='row mt-5'>
       {malumot.map((item) => (
-        <div className='col-4' key={item.key} onClick={()=>handleClick(item.key)}>
+        <div className='col-md-4 col-6' key={item.key} onClick={()=>handleClick(item.key)}>
           <TovarBox tovarName={item.tovar_name} tovarSumma={item.tovar_summa} tovarImg={item.tovar_img} />
         </div>
       ))}

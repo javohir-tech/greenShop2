@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './TovarBox.css'
-import tovar1 from '../../../public/Tovars/t1.png'
 //images
 import { Cart4, Heart, Search } from 'react-bootstrap-icons'
 

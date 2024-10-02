@@ -13,7 +13,7 @@ function ShopSection() {
         <>
             <div className="container">
                 <div className="row py-5">
-                    <div className="col-3 pe-3 left-content">
+                    <div className="col-md-3 d-none d-md-block pe-4 left-content">
                         <div className='bg-body-tertiary'>
                             <h3 className='mb-3 py-3'>Categories</h3>
                             <ul className='categories'>
@@ -63,14 +63,14 @@ function ShopSection() {
                             </ul>
                             
                         </div>
-                        <div className='reklam-box mt-0'>
+                        <div className='reklam-box d-none d-xl-block mt-0'>
                             <img src={superSale} className='img-fluid' alt="img is not defiend" />
                             <h2 className='text-center'>UP TO 75% OFF</h2>
                             <img src={reklamImg} className='img-fluid' alt="img is not defiend" />
                         </div>
                     </div>
-                    <div className='col-9 ps-3'>
-                        <ul className='d-flex shop-section__links py-2'>
+                    <div className=' col-md-9 ps-3'>
+                        <ul className='d-flex shop-section__links py-2 ps-0'>
                             <li><NavLink to='/' className='shop-section__activeLink'>All Plants</NavLink></li>
                             <li><NavLink to='newArivvals'>New Arrivals</NavLink></li>
                             <li><NavLink to='sale'>Sale</NavLink></li>

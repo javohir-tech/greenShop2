@@ -1,0 +1,65 @@
+.section-subtitle{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: rgba(61, 61, 61, 1);
+    margin-bottom: 1rem;
+}
+
+.section-title{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: rgba(114, 114, 114, 1);
+    margin-bottom: 1rem;
+}
+
+.blog-section__description{
+    text-align: center;
+}
+
+.card-info{
+    background-color: rgba(251, 251, 251, 1);
+    padding: 0.8rem;
+    box-sizing: border-box;
+    height: 180px;
+}
+
+.card-info h5{
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: rgba(70, 163, 88, 1);
+}
+
+.card-info h3{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    color:rgba(61, 61, 61, 1);
+}
+
+.card-info p{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color:rgba(114, 114, 114, 1);
+}
+
+.card-info a{
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: rgba(61, 61, 61, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card-info svg{
+    font-size: 1rem;
+    margin-left:0.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-section__card:hover a, .blog-section__card:hover svg{
+    color: rgba(70, 163, 88, 1);
+}

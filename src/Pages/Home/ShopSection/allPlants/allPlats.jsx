@@ -38,9 +38,9 @@ function AllPlats() {
     navigate(`/plants/${id}`)
   }
   return (
-    <div className='row mt-5 g-5'>
+    <div className='row mt-5 g-xl-5'>
       {currentItems.map((item) => (
-        <div className='col-4' key={item.key} onClick={()=>handleClick(item.key)}>
+        <div className='col-md-4 col-6' key={item.key} onClick={()=>handleClick(item.key)}>
           <TovarBox
             tovarName={item.tovar_name}
             tovarSumma={item.tovar_summa}

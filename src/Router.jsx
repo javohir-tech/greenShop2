@@ -83,7 +83,7 @@ const router = createBrowserRouter([
                         path: "small",
                         element: <Small />
                     },
-                    {
+                    {     
                         path: "medium",
                         element: <Medium />
                     },

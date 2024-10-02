@@ -62,3 +62,22 @@ a {
 .reklam-box {
     background-image: url(../../../../public/Images/leftImg.png);
 }
+
+@media(max-width:992px){
+    .shop-section__links a{
+        font-size: 12px;
+    }
+
+    .categories {
+       p{
+        font-size: 12px;
+       };
+    }
+
+    .left-content{
+        h3{
+            font-size: 1rem;
+        }
+    }
+
+}
