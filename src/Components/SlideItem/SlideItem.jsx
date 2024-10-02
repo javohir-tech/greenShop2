@@ -17,7 +17,7 @@ export default function SlideItem() {
                     We are an online plant shop offering a wide range of cheap and trendy plants.
                     Use our plants to create an unique Urban Jungle. Order your favorite plants!
                 </p>
-                <button className='main-button btn px-3 py-2'>SHOP NOW</button>
+                <button className='main-button btn px-3 py-2 button-sm'>SHOP NOW</button>
             </div>
             <div className='col-6 text-center'>
                 <img src={bannerImg} className='img-fluid' alt="img is not defiend" />

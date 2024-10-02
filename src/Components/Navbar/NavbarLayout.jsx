@@ -37,10 +37,10 @@ function NavbarLayout() {
         setModalMarket(true)
     }
 
-    const LoginModal = () =>{
+    const LoginModal = () => {
         setShow(true)
     }
-    
+
     const MarketModalClose = () => {
         setShow(false)
         setModalMarket(false)
@@ -68,52 +68,53 @@ function NavbarLayout() {
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-center flex-grow-1 pe-3 w-50">
+                            <Nav className="justify-content-center align-items-xl-center flex-grow-1 pe-3 w-50">
                                 <NavLink className='me-5 navbar-link' onClick={handleOffcanvas} to="/">Home</NavLink>
                                 <NavLink className='me-5 navbar-link' onClick={handleOffcanvas} to="/shop">Shop</NavLink>
                                 <NavLink className='me-5 navbar-link' onClick={handleOffcanvas} to="/plants">Plant Care</NavLink>
                                 <NavLink className='me-5 navbar-link' onClick={handleOffcanvas} to="/blogs">Blogs</NavLink>
                             </Nav>
+                            <div>
+                                <img className='me-3' src={serachImg} alt="img is not defined" />
+                                <img onClick={MarketModal} className='me-3' src={Market} alt="img is not defined" />
+                                <button className='btn  main-button' onClick={modalMarket ? null : LoginModal}><img src={login} className='me-2' alt="img is not defined" />Login</button>
+                            </div>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
-                    <div>
-                        <img className='me-3' src={serachImg} alt="img is not defined" />
-                        <img onClick={MarketModal} className='me-3' src={Market} alt="img is not defined" />
-                        <button className='btn  main-button' onClick={modalMarket ? null : LoginModal}><img src={login} className='me-2' alt="img is not defined" />Login</button>
-                    </div>
+
                     {/* modal  */}
                     {
-                        modalMarket 
-                        ?
-                        <Modal show={show} onHide={MarketModalClose} >
-                        <Modal.Header closeButton>
-                            <Modal.Title>Modal market</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-                        <Modal.Footer>
-                            <Button variant="secondary" onClick={MarketModalClose}>
-                                Close
-                            </Button>
-                            <Button variant="primary" onClick={MarketModalClose}>
-                                Save Changes
-                            </Button>
-                        </Modal.Footer>
-                    </Modal>
-                    :
-                    <Modal show={show} onHide={MarketModalClose} >
-                        <Modal.Header closeButton>
-                            <Modal.Title>login market</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-                        <Modal.Footer>
-                            <Button variant="secondary" onClick={MarketModalClose}>
-                                Close
-                            </Button>
-                            <Button variant="primary" onClick={MarketModalClose}>
-                                Save Changes
-                            </Button>
-                        </Modal.Footer>
-                    </Modal>
+                        modalMarket
+                            ?
+                            <Modal show={show} onHide={MarketModalClose} >
+                                <Modal.Header closeButton>
+                                    <Modal.Title>Modal market</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+                                <Modal.Footer>
+                                    <Button variant="secondary" onClick={MarketModalClose}>
+                                        Close
+                                    </Button>
+                                    <Button variant="primary" onClick={MarketModalClose}>
+                                        Save Changes
+                                    </Button>
+                                </Modal.Footer>
+                            </Modal>
+                            :
+                            <Modal show={show} onHide={MarketModalClose} >
+                                <Modal.Header closeButton>
+                                    <Modal.Title>login market</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+                                <Modal.Footer>
+                                    <Button variant="secondary" onClick={MarketModalClose}>
+                                        Close
+                                    </Button>
+                                    <Button variant="primary" onClick={MarketModalClose}>
+                                        Save Changes
+                                    </Button>
+                                </Modal.Footer>
+                            </Modal>
                     }
                 </div>
             </Navbar>

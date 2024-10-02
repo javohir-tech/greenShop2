@@ -18,5 +18,10 @@
 
 .swiper-pagination-bullet-active {
     background-color: rgba(70, 163, 88, 1);
+}
 
+@media(max-width:576px){
+    .swiper-slide {
+        border-radius: 20px;
+    }
 }
