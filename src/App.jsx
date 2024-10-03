@@ -4,6 +4,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarLayout from './Components/Navbar/NavbarLayout';
 import { Outlet } from 'react-router';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
       <NavbarLayout/>
       <Outlet/>
+      <Footer/>
     </>
   )
 }
