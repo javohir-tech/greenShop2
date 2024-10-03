@@ -1,0 +1,15 @@
+.section-subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: rgba(61, 61, 61, 1);
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: rgba(114, 114, 114, 1);
+    margin-bottom: 1rem;
+}

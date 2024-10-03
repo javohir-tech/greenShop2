@@ -1,0 +1,11 @@
+.reklam-card{
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.reklam-card__image{
+    position: relative;
+}
+
+.reklam-card__image img{
+    scale: 1.3;
+}
