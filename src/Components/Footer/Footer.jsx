@@ -118,11 +118,11 @@ function Footer() {
                             <div className="col-xl-3 col-6 d-flex flex-column justify-content-between">
                                 <h3>Social Media</h3>
                                 <div className='social-icons'>
-                                    <a href="" target='_blank'><Facebook  size={20} /></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100093602716619" target='_blank'><Facebook  size={20} /></a>
                                     <a href="https://www.instagram.com/suvonov_javohir1/" target='_blank'><Instagram size={20} /></a>
                                     <a href="" target='_blank'><Twitter   size={20} /></a>
-                                    <a href="" target='_blank'><Linkedin  size={20} /> </a>
-                                    <a href="" target='_blank'><Youtube   size={20} /></a>
+                                    <a href="https://www.linkedin.com/in/javohir-suvonov-a98925303/?trk=opento_sprofile_details" target='_blank'><Linkedin  size={20} /> </a>
+                                    <a href="https://www.youtube.com/watch?v=UDVtMYqUAyw" target='_blank'><Youtube   size={20} /></a>
                                 </div>
                                 <h3>We accept</h3>
                                 <img src={click} className='img-fluid' alt="img is not defined" />
