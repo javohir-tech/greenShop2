@@ -8,6 +8,10 @@
     background-color: rgba(245, 245, 245, 0.5);
 }
 
+.shop-section__slide{
+    background-color: transparent;
+}
+
 .swiper-slide img {
     width: 518px !important;
 }

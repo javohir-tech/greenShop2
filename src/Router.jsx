@@ -16,7 +16,7 @@ import BigPlants from "./Pages/Home/ShopSection/Categories/BigPlants";
 import Succulents from "./Pages/Home/ShopSection/Categories/Succulents";
 import Trerrariums from "./Pages/Home/ShopSection/Categories/Trerrariums";
 import Gardening from "./Pages/Home/ShopSection/Categories/Gardening";
-import PlantDetail from "./PlantDetail";
+import PlantDetail from "../src/Components/PlanstDetail/PlantDetail";
 import Small from "./Pages/Home/ShopSection/Size/Small";
 import Medium from "./Pages/Home/ShopSection/Size/Medium";
 import Large from "./Pages/Home/ShopSection/Size/Large";

@@ -21,7 +21,7 @@ import { NavLink } from 'react-router-dom'
 function Footer() {
     return (
         <>
-            <footer className='py-5'>
+            <footer className='pt-5'>
                 <div className='footer-first__floor pt-5 pb-4'>
                     <div className='container'>
                         <div className="row g-3">

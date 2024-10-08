@@ -5,7 +5,6 @@ import PriceRangeSlider from '../../../Components/MyRange/MyRange'
 
 //images
 import superSale from '../../../../public/Images/SuperSale.png'
-import leftImg from '../../../../public/Images/leftImg.png'
 import reklamImg from '../../../../public/Images/banner-img.png'
 
 function ShopSection() {

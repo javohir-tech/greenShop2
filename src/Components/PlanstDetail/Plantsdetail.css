@@ -1,0 +1,25 @@
+.tovar-images >  div{
+    height: 300px;
+}
+
+.left-images{
+    img{
+        width: 100px;
+       
+    }
+}
+
+.tovar-detail__img {
+    img{
+        background-color: red;
+    }
+}
+
+.button-circle {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
