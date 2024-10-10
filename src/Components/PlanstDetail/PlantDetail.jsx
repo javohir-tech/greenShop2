@@ -32,9 +32,9 @@ export default function PlantDetail() {
 
   const dataPlants = data
 
-  const navigate  = useNavigate()
+  const navigate = useNavigate()
 
-  const handleclick = (id) =>{
+  const handleclick = (id) => {
     navigate(`/plants/${id}`)
   }
   return (
@@ -114,24 +114,38 @@ export default function PlantDetail() {
         </div>
         <div>
           <Swiper
-            slidesPerView={5}
+            slidesPerView={1}
             spaceBetween={30}
             FreeMode={true}
             pagination={{
               clickable: true,
             }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+              },
+            }}
             modules={[FreeMode, Pagination]}
             className="mySwiper"
           >
-            
-            {dataPlants.map((item)=>(
-              <SwiperSlide className='shop-section__slide py-5' onClick={()=>handleclick(item.key)}>
-              <TovarBox
-                tovarName={item.tovar_name}
-                tovarSumma={item.tovar_summa}
-                tovarImg={item.tovar_img}
-              />
-            </SwiperSlide>
+
+            {dataPlants.map((item) => (
+              <SwiperSlide className='shop-section__slide py-5' onClick={() => handleclick(item.key)}>
+                <TovarBox
+                  tovarName={item.tovar_name}
+                  tovarSumma={item.tovar_summa}
+                  tovarImg={item.tovar_img}
+                />
+              </SwiperSlide>
             ))}
           </Swiper>
         </div>
