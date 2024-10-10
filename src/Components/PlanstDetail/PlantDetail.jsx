@@ -45,7 +45,7 @@ export default function PlantDetail() {
 
       <div className="container">
         <div className="row">
-          <div className="col-6 d-flex ">
+          <div className="col-md-6 d-flex ">
             <div className='left-images d-flex flex-column justify-content-between'>
               <img src={plant.tovar_img} alt="img is not definet" />
               <img src={plant.tovar_img} alt="img is not definet" />
@@ -56,7 +56,7 @@ export default function PlantDetail() {
               <img src={plant.tovar_img} className='tovar-detail__img' alt="" />
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-md-6">
             <h1>{plant.tovar_name}</h1>
             <div className='d-flex justify-content-between'>
               <p>{plant.tovar_summa}</p>
@@ -76,7 +76,7 @@ export default function PlantDetail() {
               <button className='rounded-circle second-button btn button-circle'>L </button>
               <button className='rounded-circle second-button btn button-circle'>Xl</button>
             </div>
-            <div className='py-3 d-flex align-items-center justify-content-between'>
+            <div className='py-3 d-md-flex align-items-center justify-content-between'>
               <button className='main-button rounded-pill p-2'>-</button>
               <p className='m-0'>1</p>
               <button className='main-button rounded-pill p-2'>+</button>
